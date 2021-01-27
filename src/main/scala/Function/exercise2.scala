@@ -4,7 +4,7 @@ object exercise2 extends App {
   def loop(f: Int => Int, a: Int, b: Int) = {
     def loop(a: Int, acc: Int): Int =
       if(a > b) acc
-      else loop(a + 1, f(a) + acc)_
+      else loop(a + 1, f(a) + acc)
     loop(a, 0)
   }
 
@@ -17,6 +17,4 @@ object exercise2 extends App {
   def mapReduce(f: Int => Int, combine: (Int, Int) => Int, zero: Int)(a: Int, b: Int): Int =
     if (a > b) zero
     else combine(f(a), mapReduce(f, combine, zero)(a + 1, b))
-
-
 }

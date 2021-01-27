@@ -12,9 +12,6 @@ object Currying_Demo {
 
   def add3 (x: Int)(y: Int) =  x + y
 
-
-
-
   def main(args: Array[String]): Unit = {
     println(add(1,2))
 
@@ -28,7 +25,5 @@ object Currying_Demo {
     val sum50 = add3(50)_
 
     println(sum50(50))
-
-
   }
 }

@@ -14,8 +14,5 @@ object Array_Demo {
     for (x <- myArray2){
       println(x)
     }
-
-
-
   }
 }
